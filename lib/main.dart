@@ -11,7 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Rebase Flutter Challenge',
+
       theme: ThemeData(brightness: Brightness.dark, primarySwatch: Colors.pink),
+
       home: const CounterPage(),
     );
   }
@@ -54,6 +56,7 @@ class _CounterPageState extends State<CounterPage> {
       floatingActionButton: FloatingActionButton(
         // INTENTIONAL ERROR: Missing function call
         onPressed: _incrementCounter,
+
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
